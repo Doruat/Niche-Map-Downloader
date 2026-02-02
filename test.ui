@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>98</width>
+         <height>476</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="searchTabButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Search
+Beatmapset</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resultsTabButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Results</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="settingsButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Settings</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="searchPage">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>683</width>
+             <height>458</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_13">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>Text Input</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_3"/>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_9">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_16">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="miscButton">
+                    <property name="text">
+                     <string>Misc.</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="beatmapInfoButton">
+                    <property name="text">
+                     <string>Beatmap Info</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="songInfoButton">
+                    <property name="text">
+                     <string>Song Info</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <widget class="QStackedWidget" name="stackedWidget_2">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="beatmapInfoPage">
+                 <layout class="QGridLayout" name="gridLayout_19">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_18">
+                    <item row="5" column="2">
+                     <widget class="QDoubleSpinBox" name="odMax">
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>10.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                      <property name="value">
+                       <double>0.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDoubleSpinBox" name="csMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_8">
+                      <property name="text">
+                       <string>BPM</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QDoubleSpinBox" name="odMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_9">
+                      <property name="text">
+                       <string>Status</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QDoubleSpinBox" name="bpmMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>Stars</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Circle Size</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_5">
+                      <property name="text">
+                       <string>Approach Rate</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QDoubleSpinBox" name="arMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_6">
+                      <property name="text">
+                       <string>Hp Drain</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_7">
+                      <property name="text">
+                       <string>Overall Difficulty</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QDoubleSpinBox" name="hpMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="statusBox">
+                      <property name="currentText">
+                       <string>Any</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Any</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ranked</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Loved</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Qualified</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pending</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>WIP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Graveyard</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QDoubleSpinBox" name="bpmMax">
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>1000.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QDoubleSpinBox" name="sMax">
+                      <property name="buttonSymbols">
+                       <enum>QAbstractSpinBox::ButtonSymbols::UpDownArrows</enum>
+                      </property>
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="showGroupSeparator" stdset="0">
+                       <bool>false</bool>
+                      </property>
+                      <property name="prefix">
+                       <string/>
+                      </property>
+                      <property name="decimals">
+                       <number>2</number>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                      <property name="value">
+                       <double>0.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QDoubleSpinBox" name="csMax">
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>10.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                      <property name="value">
+                       <double>0.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QDoubleSpinBox" name="arMax">
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>10.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                      <property name="value">
+                       <double>0.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QDoubleSpinBox" name="hpMax">
+                      <property name="specialValueText">
+                       <string>Max</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="maximum">
+                       <double>10.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                      <property name="value">
+                       <double>0.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QDoubleSpinBox" name="sMin">
+                      <property name="specialValueText">
+                       <string>Min</string>
+                      </property>
+                      <property name="correctionMode">
+                       <enum>QAbstractSpinBox::CorrectionMode::CorrectToNearestValue</enum>
+                      </property>
+                      <property name="decimals">
+                       <number>2</number>
+                      </property>
+                      <property name="maximum">
+                       <double>15.000000000000000</double>
+                      </property>
+                      <property name="singleStep">
+                       <double>0.100000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="miscInfoPage">
+                 <layout class="QGridLayout" name="gridLayout_24">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_23">
+                    <item row="0" column="0">
+                     <widget class="QStackedWidget" name="stackedWidget_3">
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="page">
+                       <layout class="QGridLayout" name="gridLayout_28">
+                        <item row="0" column="0">
+                         <layout class="QGridLayout" name="gridLayout_27">
+                          <item row="2" column="1">
+                           <widget class="QComboBox" name="tagBox"/>
+                          </item>
+                          <item row="3" column="0">
+                           <widget class="QLabel" name="label_17">
+                            <property name="text">
+                             <string>Search Limit</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <widget class="QSpinBox" name="spinBox">
+                            <property name="maximum">
+                             <number>60000</number>
+                            </property>
+                            <property name="value">
+                             <number>1000</number>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_14">
+                            <property name="text">
+                             <string>Genre</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLabel" name="label_16">
+                            <property name="text">
+                             <string>Tag</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QComboBox" name="languageBox"/>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="genreBox"/>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_15">
+                            <property name="text">
+                             <string>Language</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="1">
+                           <layout class="QGridLayout" name="gridLayout_29">
+                            <item row="0" column="1">
+                             <widget class="QPushButton" name="moreButton">
+                              <property name="toolTip">
+                               <string>Very niche settings</string>
+                              </property>
+                              <property name="text">
+                               <string>More&gt;&gt;&gt;</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="0" column="0">
+                             <spacer name="horizontalSpacer_5">
+                              <property name="orientation">
+                               <enum>Qt::Orientation::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_2">
+                       <layout class="QGridLayout" name="gridLayout_31">
+                        <item row="0" column="0">
+                         <layout class="QGridLayout" name="gridLayout_30">
+                          <item row="0" column="1">
+                           <widget class="QDoubleSpinBox" name="sliderCircleRatioMin">
+                            <property name="specialValueText">
+                             <string>Min</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_19">
+                            <property name="text">
+                             <string>Slider/Circle Ratio</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2">
+                           <widget class="QDoubleSpinBox" name="sliderCircleRatioMax">
+                            <property name="specialValueText">
+                             <string>Max</string>
+                            </property>
+                            <property name="maximum">
+                             <double>99990000.000000000000000</double>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_20">
+                            <property name="text">
+                             <string>Taps per Minute (Avg.)</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QDoubleSpinBox" name="tpmMin">
+                            <property name="specialValueText">
+                             <string>Min</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QDoubleSpinBox" name="tpmMax">
+                            <property name="specialValueText">
+                             <string>Max</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item row="1" column="0">
+                         <layout class="QGridLayout" name="gridLayout_32">
+                          <item row="0" column="1">
+                           <widget class="QPushButton" name="lessInfoButton">
+                            <property name="text">
+                             <string>&lt;&lt;&lt;Less</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <spacer name="horizontalSpacer_6">
+                            <property name="orientation">
+                             <enum>Qt::Orientation::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="songInfoPage">
+                 <layout class="QGridLayout" name="gridLayout_21">
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_20">
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_11">
+                      <property name="text">
+                       <string>Artist</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="artistLine"/>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="mapperLine"/>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_12">
+                      <property name="text">
+                       <string>Mapper</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="titleLine"/>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_10">
+                      <property name="text">
+                       <string>Title</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_13">
+                      <property name="text">
+                       <string>Lenght
+(in seconds)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <layout class="QGridLayout" name="gridLayout_22">
+                      <item row="0" column="2">
+                       <widget class="QSpinBox" name="lenghtMax">
+                        <property name="specialValueText">
+                         <string>Max</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QSpinBox" name="lenghtMin">
+                        <property name="specialValueText">
+                         <string>Min</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="3">
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Policy::Maximum</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>300</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_17">
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="queryLine">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="searchButton">
+                <property name="text">
+                 <string>Search</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Seacrh Query</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="resetButton">
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="resultsPage">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>369</width>
+             <height>153</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_26">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_25">
+              <item row="2" column="0" rowspan="2">
+               <layout class="QGridLayout" name="gridLayout_14">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Download Amount</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QPushButton" name="downloadButton">
+                  <property name="text">
+                   <string>Download</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QCheckBox" name="randomDownloadCheck">
+                  <property name="text">
+                   <string>Choose Randomly</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QSpinBox" name="downloadAmount">
+                  <property name="specialValueText">
+                   <string>All</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="resultsTable">
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Title</string>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="whatsThis">
+                  <string/>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Artist</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Mapper</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Beatmap Count</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QProgressBar" name="progressBar">
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="format">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="settingsPage">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea_4">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>683</width>
+             <height>458</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="2" column="0">
+             <layout class="QGridLayout" name="gridLayout_36">
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_11">
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="tempFolderInfo">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>25</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files will be temporarily stored here until all of them are downloaded.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>?</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="selectDLDir">
+                  <property name="text">
+                   <string>Select Temporary Download Folder</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="1">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="clientID">
+                  <property name="text">
+                   <string>Client ID</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="clientSecretInput"/>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="clientSecret">
+                  <property name="text">
+                   <string>Client Secret</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="clientIDINPUT"/>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="0">
+               <layout class="QGridLayout" name="gridLayout_38">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="goClientURL">
+                  <property name="text">
+                   <string>Get My Client Credentials</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QGridLayout" name="gridLayout_8">
+                  <item row="1" column="0">
+                   <spacer name="horizontalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="1" column="2">
+                   <spacer name="horizontalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Orientation::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="whyButton">
+                    <property name="toolTip">
+                     <string>API needs a token to access and since I am not going to share my own credentials with everyone, you need to share it with the app. I could probably avoid this with some shenanigans but I am lazy :3</string>
+                    </property>
+                    <property name="text">
+                     <string>Why do I enter these?</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="osuFolderSelect">
+                <property name="text">
+                 <string>Select Osu Folder</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="osuFolderDir">
+                <property name="text">
+                 <string>*None*</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="gridLayout_37">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="tempDLDir">
+                  <property name="text">
+                   <string>*None*</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="0">
+             <layout class="QGridLayout" name="gridLayout_15">
+              <item row="0" column="1">
+               <widget class="QPushButton" name="saveButton">
+                <property name="text">
+                 <string>Save</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>827</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
